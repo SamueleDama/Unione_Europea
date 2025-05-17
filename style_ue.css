@@ -1,0 +1,38 @@
+
+
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2.5em;
+    padding: 1.5em;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2,
+h3 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+}
+
+
+
+
+footer {
+    padding: 1em;
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
