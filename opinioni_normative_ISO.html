@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normative ISO - Educazione Civica</title>
+    <link rel="stylesheet" href="style_secondario.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="immagini/ferraris_logo.ico">
+    <style>
+        /* Stili specifici per la pagina delle opinioni */
+        .opinion-container {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .opinion-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .opinion-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #2600ff, #09c0ee);
+        }
+        
+        .opinion-author {
+            font-weight: bold;
+            color: #2600ff;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .opinion-date {
+            font-size: 0.8em;
+            color: #666;
+        }
+        
+        .opinion-text {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .opinion-text p {
+            margin-bottom: 15px;
+        }
+        
+        .opinion-form {
+            background: #f0f4f8;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        
+        .opinion-form h3 {
+            color: #2600ff;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1em;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(45deg, #2600ff, #09c0ee);
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(9, 192, 238, 0.4);
+        }
+        
+        .normative-info {
+            margin-bottom: 30px;
+        }
+        
+        .normative-info h3 {
+            color: #2600ff;
+            margin-bottom: 15px;
+        }
+        
+        .normative-types {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .normative-type {
+            flex: 1;
+            min-width: 250px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .normative-type h4 {
+            color: #2600ff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="immagini/bandiera.png" alt="Bandiera Europa">
+            <h1>Opinioni sulle Normative ISO</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduzione_ue.html">U.E.</a></li>
+                <li><a href="gdpr.html">GDPR</a></li>
+                <li><a href="matematica.html">Matematica</a></li>
+                <li><a href="normative.html" class="active">Normative ISO</a></li>
+                <li><a href="#about">Chi siamo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="card" style="grid-column: 1 / -1;">
+            <h3>Le Normative ISO in ambito aziendale</h3>
+            <p>In questa sezione raccogliamo le opinioni degli studenti sulle principali normative ISO che influenzano le aziende moderne, con particolare attenzione alla famiglia ISO 14000 (gestione ambientale) e alla ISO 45001:2018 (salute e sicurezza sul lavoro).</p>
+            <p>Queste normative, pur non essendo sempre obbligatorie, rappresentano importanti strumenti per guidare le imprese verso una gestione più sostenibile, sicura e responsabile. Le opinioni qui raccolte riflettono il pensiero critico degli studenti su questi temi fondamentali per l'educazione civica e la cittadinanza attiva.</p>
+        </div>
+
+        <div class="normative-info" style="grid-column: 1 / -1;">
+            <h3>Le normative in breve</h3>
+            <div class="normative-types">
+                <div class="normative-type">
+                    <h4>ISO 14000</h4>
+                    <p>La famiglia di norme ISO 14000 fornisce strumenti pratici per le aziende che vogliono gestire le proprie responsabilità ambientali. Si concentra sulla gestione ambientale e include standard per:</p>
+                    <ul>
+                        <li>Sistemi di gestione ambientale</li>
+                        <li>Audit ambientali</li>
+                        <li>Etichettatura ambientale</li>
+                        <li>Valutazione delle prestazioni ambientali</li>
+                        <li>Analisi del ciclo di vita</li>
+                    </ul>
+                </div>
+                <div class="normative-type">
+                    <h4>ISO 45001:2018</h4>
+                    <p>La norma ISO 45001:2018 specifica i requisiti per un sistema di gestione della salute e sicurezza sul lavoro (SSL) e fornisce indicazioni per il suo utilizzo. Aiuta le organizzazioni a:</p>
+                    <ul>
+                        <li>Ridurre infortuni e malattie sul lavoro</li>
+                        <li>Eliminare o minimizzare i rischi per la SSL</li>
+                        <li>Migliorare le prestazioni e l'efficacia della SSL</li>
+                        <li>Proteggere e migliorare la reputazione dell'organizzazione</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="opinion-container" style="grid-column: 1 / -1;">
+            <div class="opinion-author">
+                <span>Opinione di uno studente</span>
+                <span class="opinion-date">17 maggio 2025</span>
+            </div>
+            <div class="opinion-text">
+                <p>In merito agli aspetti contemplati all'interno delle norme della famiglia ISO 14000, nello specifico, riguardanti il sistema di gestione ambientale che deve essere adottato dalle imprese presenti in tutto il mondo, ritengo che esso costituisca un importantissimo passo in avanti effettuato nell'ambito della tutela dell'ambiente a noi circostante. Mi permetto di affermare ciò, in quanto la tendenza comune (soprattutto da parte delle maggiori istituzioni) è quella di attribuire ai consumatori finali dei prodotti realizzati dalle singole imprese tutte le responsabilità derivanti dal crescente fenomeno dell'inquinamento ambientale tanto ricorrente al nostro tempo.</p>
+                
+                <p>In realtà, secondo il mio modesto parere, ritengo che l'attribuzione totale della responsabilità verso questo problema vada parzialmente migrata verso le imprese, proprio perché queste ultime non si attengono quanto dovrebbero al rispetto del nostro ambiente durante tutta la loro fase di produzione: nello specifico, tra i problemi ricorrenti, ritroviamo una scarsa attenzione nei materiali che vengono utilizzati e nello smaltimento di quelli che avanzano dalla produzione, una mancata formazione delle figure che vanno ad operare all'interno di tutto l'ambito produttivo, e soprattutto, spostando l'attenzione sulla responsabilità del nostro Stato, ritengo che non sia stata così evidente una qualche forma di aiuto dal punto di vista economico verso coloro i quali adottavano una notevole meticolosità nel rispettare l'ambiente durante il processo produttivo.</p>
+                
+                <p>In definitiva, da quello che si evince dal mio discorso, quindi, l'invito risiede nel fatto che, proprio perché queste norme (attualmente) non sono obbligatoriamente da rispettare, si faccia il possibile in termini di appoggi economici e di campagne volte all'incentivare al rispetto di questa sezione normativa, al fine di poter trasformare il rispetto di queste norme da un dovere formale ad un obbligo etico.</p>
+                
+                <p>Da questo ragionamento, mi collego anche al discorso riguardante le norma ISO 45001:2018, introdotta al fine di garantire il raggiungimento degli obiettivi di salute e di sicurezza sul lavoro minimizzando al contempo i costi. Anche in riferimento a questo ambito, mi sento in dovere di affermare che effettivamente l'introduzione di questa sezione normativa costituisca un passo altrettanto significativo per l'ambito lavorativo, se non fosse che, anche in questo caso, il rispetto di tale sezione normativa sia dipendente dalla volontà del datore di lavoro (entro i dovuti limiti). Anche per questo ambito, quindi, ancora una volta l'invito è quello di, soprattutto da parte delle più importanti istituzioni del settore, fornire i dovuti incentivi in termini economici al fine di poter garantire ad un'impresa di qualsiasi entità di poter adottare gli accorgimenti e precauzioni proposte.</p>
+            </div>
+        </div>
+
+        <div class="opinion-form" style="grid-column: 1 / -1;">
+            <h3>Condividi la tua opinione</h3>
+            <form id="opinionForm">
+                <div class="form-group">
+                    <label for="name">Nome e Cognome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="opinion">La tua opinione sulle normative ISO</label>
+                    <textarea id="opinion" name="opinion" required placeholder="Condividi qui il tuo pensiero critico sulle normative ISO 14000 e/o ISO 45001..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Invia la tua opinione</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h4>Educazione Civica 2025</h4>
+                <p>Un progetto dell'Istituto di Istruzione Superiore Galileo Ferraris di Ragusa</p>
+            </div>
+            <div class="footer-links">
+                <h4>Collegamenti rapidi</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="introduzione_ue.html">Unione Europea</a></li>
+                    <li><a href="gdpr.html">GDPR</a></li>
+                    <li><a href="matematica.html">Matematica</a></li>
+                    <li><a href="normative.html">Normative ISO</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('opinionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Raccogliere i dati dal form
+            const name = document.getElementById('name').value;
+            const opinion = document.getElementById('opinion').value;
+            
+            // Creare un nuovo contenitore per l'opinione
+            const opinionContainer = document.createElement('div');
+            opinionContainer.className = 'opinion-container';
+            opinionContainer.style.gridColumn = '1 / -1';
+            
+            // Formattare la data corrente
+            const today = new Date();
+            const day = today.getDate();
+            const month = today.getMonth() + 1; // I mesi partono da 0
+            const year = today.getFullYear();
+            const formattedDate = `${day < 10 ? '0' + day : day}/${month < 10 ? '0' + month : month}/${year}`;
+            
+            // Creare il contenuto HTML per l'opinione
+            opinionContainer.innerHTML = `
+                <div class="opinion-author">
+                    <span>Opinione di ${name}</span>
+                    <span class="opinion-date">${formattedDate}</span>
+                </div>
+                <div class="opinion-text">
+                    <p>${opinion.replace(/\n/g, '</p><p>')}</p>
+                </div>
+            `;
+            
+            // Inserire l'opinione prima del form
+            const opinionForm = document.querySelector('.opinion-form');
+            opinionForm.parentNode.insertBefore(opinionContainer, opinionForm);
+            
+            // Ripulire il form
+            document.getElementById('name').value = '';
+            document.getElementById('opinion').value = '';
+            
+            // Mostrare un messaggio di conferma
+            alert('La tua opinione è stata aggiunta con successo!');
+        });
+    </script>
+</body>
+</html>
