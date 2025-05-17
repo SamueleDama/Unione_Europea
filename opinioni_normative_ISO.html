@@ -214,23 +214,7 @@
                 <p>Da questo ragionamento, mi collego anche al discorso riguardante le norma ISO 45001:2018, introdotta al fine di garantire il raggiungimento degli obiettivi di salute e di sicurezza sul lavoro minimizzando al contempo i costi. Anche in riferimento a questo ambito, mi sento in dovere di affermare che effettivamente l'introduzione di questa sezione normativa costituisca un passo altrettanto significativo per l'ambito lavorativo, se non fosse che, anche in questo caso, il rispetto di tale sezione normativa sia dipendente dalla volontà del datore di lavoro (entro i dovuti limiti). Anche per questo ambito, quindi, ancora una volta l'invito è quello di, soprattutto da parte delle più importanti istituzioni del settore, fornire i dovuti incentivi in termini economici al fine di poter garantire ad un'impresa di qualsiasi entità di poter adottare gli accorgimenti e precauzioni proposte.</p>
             </div>
         </div>
-
-        <div class="opinion-form" style="grid-column: 1 / -1;">
-            <h3>Condividi la tua opinione</h3>
-            <form id="opinionForm">
-                <div class="form-group">
-                    <label for="name">Nome e Cognome</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="opinion">La tua opinione sulle normative ISO</label>
-                    <textarea id="opinion" name="opinion" required placeholder="Condividi qui il tuo pensiero critico sulle normative ISO 14000 e/o ISO 45001..."></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Invia la tua opinione</button>
-            </form>
-        </div>
     </main>
-
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -252,49 +236,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('opinionForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Raccogliere i dati dal form
-            const name = document.getElementById('name').value;
-            const opinion = document.getElementById('opinion').value;
-            
-            // Creare un nuovo contenitore per l'opinione
-            const opinionContainer = document.createElement('div');
-            opinionContainer.className = 'opinion-container';
-            opinionContainer.style.gridColumn = '1 / -1';
-            
-            // Formattare la data corrente
-            const today = new Date();
-            const day = today.getDate();
-            const month = today.getMonth() + 1; // I mesi partono da 0
-            const year = today.getFullYear();
-            const formattedDate = `${day < 10 ? '0' + day : day}/${month < 10 ? '0' + month : month}/${year}`;
-            
-            // Creare il contenuto HTML per l'opinione
-            opinionContainer.innerHTML = `
-                <div class="opinion-author">
-                    <span>Opinione di ${name}</span>
-                    <span class="opinion-date">${formattedDate}</span>
-                </div>
-                <div class="opinion-text">
-                    <p>${opinion.replace(/\n/g, '</p><p>')}</p>
-                </div>
-            `;
-            
-            // Inserire l'opinione prima del form
-            const opinionForm = document.querySelector('.opinion-form');
-            opinionForm.parentNode.insertBefore(opinionContainer, opinionForm);
-            
-            // Ripulire il form
-            document.getElementById('name').value = '';
-            document.getElementById('opinion').value = '';
-            
-            // Mostrare un messaggio di conferma
-            alert('La tua opinione è stata aggiunta con successo!');
-        });
-    </script>
 </body>
 </html>
