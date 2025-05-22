@@ -1,106 +1,328 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDPR - Educazione Civica</title>
+    <title>Normative ISO - Educazione Civica</title>
     <link rel="stylesheet" href="style_secondario.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="immagini/ferraris_logo.ico">
+    <style>
+        /* Stili specifici per la pagina delle opinioni */
+        .opinion-container {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .opinion-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .opinion-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #2600ff, #09c0ee);
+        }
+
+        .opinion-author {
+            font-weight: bold;
+            color: #2600ff;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .opinion-date {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .opinion-text {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .opinion-text p {
+            margin-bottom: 15px;
+        }
+
+        .opinion-form {
+            background: #f0f4f8;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .opinion-form h3 {
+            color: #2600ff;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #2600ff, #09c0ee);
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(9, 192, 238, 0.4);
+        }
+
+        .dati-info {
+            margin-bottom: 30px;
+        }
+
+        .dati-info h3 {
+            color: #2600ff;
+            margin-bottom: 15px;
+        }
+
+        .dati-types {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .dati-type {
+            flex: 1;
+            min-width: 250px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .dati-type h4 {
+            color: #2600ff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-    <div class="logo">
-      <img src="immagini/bandiera.png" alt="Bandiera Europa">
-      <h1>GDPR: Regolamento Generale sulla Protezione dei Dati</h1>
-    </div>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="introduzione_ue.html">U.E.</a></li>
-          <li><a href="eu_uk.html">E.U.</a></li>
-          <li><a href="gdpr.html" class="active">GDPR</a></li>
-          <li><a href="matematica.html">Matematica</a></li>
-          <li><a href="sicurezza_dei_dati.html">Protezione e sicurezza dei dati</a></li>
-          <li><a href="opinioni_normative_ISO.html">Opinioni normative ISO</a></li>
-          <li><a href="opinioni_sa.html">Opinioni normative SA</a></li>
-        </ul>
-</nav>
-  </header>
+        <div class="logo">
+            <img src="immagini/bandiera.png" alt="Bandiera Europa">
+            <h1>Opinioni sulle Normative ISO</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduzione_ue.html">U.E.</a></li>
+                <li><a href="eu_uk.html" class="active">E.U.</a></li>
+                <li><a href="gdpr.html">GDPR</a></li>
+                <li><a href="matematica.html">Matematica</a></li>
+                <li><a href="sicurezza_dei_dati.html">Protezione e sicurezza dei dati</a></li>
+                <li><a href="opinioni_normative_ISO.html">Opinioni normative ISO</a></li>
+                <li><a href="opinioni_sa.html">Opinioni normative SA</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class="content">
-        <div class="card">
+        <div class="card" style="grid-column: 1 / -1;">
             <h3>Introduzione al GDPR</h3>
-            <p>Il <strong>GDPR</strong> (General Data Protection Regulation) è il Regolamento Generale sulla Protezione dei Dati dell'Unione Europea, entrato in vigore il 25 maggio 2018. Questo importante regolamento ha rivoluzionato il modo in cui vengono gestiti i dati personali in tutta Europa.</p>
-            <p>Il regolamento garantisce a tutti i cittadini europei un maggiore controllo sui propri dati personali e impone regole più severe e trasparenti a tutte le organizzazioni che raccolgono, gestiscono o elaborano tali dati.</p>
-            <a href="https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32016R0679" target="_blank">Testo completo del regolamento</a>
+            <p>Il <strong>GDPR</strong> (General Data Protection Regulation) è il Regolamento Generale sulla Protezione
+                dei Dati dell'Unione Europea, entrato in vigore il 25 maggio 2018. Questo importante regolamento ha
+                rivoluzionato il modo in cui vengono gestiti i dati personali in tutta Europa.</p>
+            <p>Il regolamento garantisce a tutti i cittadini europei un maggiore controllo sui propri dati personali e
+                impone regole più severe e trasparenti a tutte le organizzazioni che raccolgono, gestiscono o elaborano
+                tali dati.</p>
+            <a href="https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32016R0679" target="_blank">Testo
+                completo del regolamento</a>
         </div>
-        <div class="card">
-            <h3>Principi Fondamentali</h3>
-            <p>Il GDPR si fonda su sette principi essenziali che guidano qualsiasi trattamento di dati personali:</p>
+
+        <div class="dati-info" style="grid-column: 1 / -1;">
+            <div class="dati-types">
+                <div class="dati-type">
+                    <h4>Principi Fondamentali</h4>
+                    <p>Il GDPR si fonda su sette principi essenziali che guidano qualsiasi trattamento di dati
+                        personali:</p>
+                    <ul>
+                        <li><strong>Liceità, correttezza e trasparenza</strong>: i dati devono essere trattati in modo
+                            lecito, corretto e trasparente nei confronti dell'interessato</li>
+                        <li><strong>Limitazione delle finalità</strong>: i dati devono essere raccolti per finalità
+                            determinate, esplicite e legittime</li>
+                        <li><strong>Minimizzazione dei dati</strong>: i dati devono essere adeguati, pertinenti e
+                            limitati a quanto necessario</li>
+                        <li><strong>Accuratezza</strong>: i dati devono essere esatti e aggiornati</li>
+                        <li><strong>Limitazione della conservazione</strong>: i dati devono essere conservati non oltre
+                            il tempo necessario</li>
+                        <li><strong>Integrità e riservatezza</strong>: i dati devono essere trattati in modo da
+                            garantirne sicurezza e protezione</li>
+                        <li><strong>Responsabilità</strong>: il titolare del trattamento è responsabile del rispetto dei
+                            principi e deve poterlo dimostrare</li>
+                    </ul>
+                </div>
+                <div class="dati-type">
+                    <h4>Diritti degli Interessati</h4>
+                    <p>Il GDPR rafforza significativamente i diritti delle persone in relazione ai propri dati
+                        personali:</p>
+                    <ul>
+                        <li><strong>Diritto di accesso</strong>: poter ottenere conferma che sia in corso un trattamento
+                            di dati personali e ricevere informazioni chiare su tale trattamento</li>
+                        <li><strong>Diritto di rettifica</strong>: poter ottenere la correzione di dati inesatti o
+                            l'integrazione di dati incompleti</li>
+                        <li><strong>Diritto alla cancellazione (diritto all'oblio)</strong>: poter ottenere la
+                            cancellazione dei propri dati personali in determinate circostanze</li>
+                        <li><strong>Diritto di limitazione del trattamento</strong>: poter ottenere la limitazione del
+                            trattamento dei propri dati</li>
+                        <li><strong>Diritto alla portabilità dei dati</strong>: poter ricevere i propri dati in formato
+                            strutturato e trasferirli ad un altro titolare</li>
+                        <li><strong>Diritto di opposizione</strong>: poter opporsi al trattamento dei propri dati
+                            personali in qualsiasi momento</li>
+                    </ul>
+                </div>
+                <div class="dati-type">
+                    <h4>Obblighi dei Titolari del Trattamento</h4>
+                    <p>Le organizzazioni che trattano dati personali devono rispettare numerosi obblighi:</p>
+                    <ul>
+                        <li>Redazione e pubblicazione di <strong>informative privacy</strong> chiare e comprensibili
+                        </li>
+                        <li>Implementazione di <strong>misure tecniche e organizzative</strong> adeguate per garantire
+                            la sicurezza dei dati</li>
+                        <li>Esecuzione di <strong>valutazioni d'impatto sulla protezione dei dati</strong> (DPIA) per
+                            trattamenti ad alto rischio</li>
+                        <li>Nomina di un <strong>Responsabile della Protezione dei Dati</strong> (DPO) in determinati
+                            casi</li>
+                        <li>Tenuta di un <strong>registro delle attività di trattamento</strong></li>
+                        <li>Notifica delle <strong>violazioni di dati personali</strong> (data breach) all'autorità di
+                            controllo e agli interessati</li>
+                    </ul>
+                    <p>Il mancato rispetto del GDPR può comportare <strong>sanzioni amministrative</strong> fino a 20
+                        milioni di euro o fino al 4% del fatturato mondiale annuo.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="grid-column: 1 / -1;">
+            <h3>Cosa sono i dati sensibili</h3>
+            <p>I dati sensibili includono informazioni come l’origine etnica, opinioni politiche,
+                convinzioni religiose, dati biometrici, genetici, sanitari o relativi alla vita sessuale. Essi
+                richiedono protezione elevata, poiché la loro esposizione può causare danni personali,
+                finanziari o reputazionali. Rischi legati alla mancata protezione
+                Tre principali rischi sono:</p>
             <ul>
-                <li><strong>Liceità, correttezza e trasparenza</strong>: i dati devono essere trattati in modo lecito, corretto e trasparente nei confronti dell'interessato</li>
-                <li><strong>Limitazione delle finalità</strong>: i dati devono essere raccolti per finalità determinate, esplicite e legittime</li>
-                <li><strong>Minimizzazione dei dati</strong>: i dati devono essere adeguati, pertinenti e limitati a quanto necessario</li>
-                <li><strong>Accuratezza</strong>: i dati devono essere esatti e aggiornati</li>
-                <li><strong>Limitazione della conservazione</strong>: i dati devono essere conservati non oltre il tempo necessario</li>
-                <li><strong>Integrità e riservatezza</strong>: i dati devono essere trattati in modo da garantirne sicurezza e protezione</li>
-                <li><strong>Responsabilità</strong>: il titolare del trattamento è responsabile del rispetto dei principi e deve poterlo dimostrare</li>
+                <li><strong>Furto d' identità: </strong> spesso tramite phishing.</li>
+                <li><strong>Uso ignoto dei dati: </strong>come nella profilazione pubblicitaria.</li>
+                <li><strong>Accesso da parte di terzi non autorizzati: </strong> per esempio, tramite social network che
+                    accedono a posizione o contatti.</li>
             </ul>
         </div>
-        <div class="card">
-            <h3>Diritti degli Interessati</h3>
-            <p>Il GDPR rafforza significativamente i diritti delle persone in relazione ai propri dati personali:</p>
-            <ul>
-                <li><strong>Diritto di accesso</strong>: poter ottenere conferma che sia in corso un trattamento di dati personali e ricevere informazioni chiare su tale trattamento</li>
-                <li><strong>Diritto di rettifica</strong>: poter ottenere la correzione di dati inesatti o l'integrazione di dati incompleti</li>
-                <li><strong>Diritto alla cancellazione (diritto all'oblio)</strong>: poter ottenere la cancellazione dei propri dati personali in determinate circostanze</li>
-                <li><strong>Diritto di limitazione del trattamento</strong>: poter ottenere la limitazione del trattamento dei propri dati</li>
-                <li><strong>Diritto alla portabilità dei dati</strong>: poter ricevere i propri dati in formato strutturato e trasferirli ad un altro titolare</li>
-                <li><strong>Diritto di opposizione</strong>: poter opporsi al trattamento dei propri dati personali in qualsiasi momento</li>
-            </ul>
+
+        <div class="dati-info" style="grid-column: 1 / -1;">
+            <div class="dati-types">
+                <div class="dati-type">
+                    <h4>Gestione corretta e scorretta dei dati</h4>
+                    <p>Alcuni siti o applicazioni possono gestire in maniera corretta o in maniera scorretta i dati
+                        sensibili
+                        possiamo citare alcuni colossi dell'internet che gestiscono i dati in maniera efficente e anche
+                        alcuni
+                        secondari che li gestiscono in maniera diversa:
+                    </p>
+                    <ul>
+                        <li><strong>Google: </strong> Google non vende direttamente i dati, ma li usa per Offrire spazi
+                            pubblicitari mirati e Creare profili demografici per pubblicità personalizzata</li>
+                        <li><strong>Apple e Microsoft: </strong> Apple si distingue per la centralità data alla privacy
+                            e per l’uso estensivo della
+                            crittografia. Microsoft segue le normative ma ha avuto approcci più controversi, pur
+                            pubblicando
+                            regolarmente report sulla privacy.</li>
+                    </ul>
+                </div>
+                <div class="dati-type">
+                    <h4>Linee guida per la protezione dei dati</h4>
+                    <p>Le nuove tecnologie offrono alcuni metodi di protezione e anche di prevenzione al furto dei dati
+                        possiamo citarne alcune di seguito come ad esempio:
+                    </p>
+
+                    <ul>
+                        <li><strong>crittografia: </strong>Tecnologia che impedisce l’accesso non autorizzato ai dati.
+                            Fondamentale secondo
+                            l’Articolo 32 del GDPR. Si raccomanda l’uso dell’hashing per proteggere le password</li>
+                        <li><strong>Minimizzazione dei dati: </strong>Secondo l’Articolo 5 del GDPR, è obbligatorio
+                            raccogliere solo i dati strettamente
+                            necessari per il servizio</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-        <div class="card">
-            <h3>Obblighi dei Titolari del Trattamento</h3>
-            <p>Le organizzazioni che trattano dati personali devono rispettare numerosi obblighi:</p>
-            <ul>
-                <li>Redazione e pubblicazione di <strong>informative privacy</strong> chiare e comprensibili</li>
-                <li>Implementazione di <strong>misure tecniche e organizzative</strong> adeguate per garantire la sicurezza dei dati</li>
-                <li>Esecuzione di <strong>valutazioni d'impatto sulla protezione dei dati</strong> (DPIA) per trattamenti ad alto rischio</li>
-                <li>Nomina di un <strong>Responsabile della Protezione dei Dati</strong> (DPO) in determinati casi</li>
-                <li>Tenuta di un <strong>registro delle attività di trattamento</strong></li>
-                <li>Notifica delle <strong>violazioni di dati personali</strong> (data breach) all'autorità di controllo e agli interessati</li>
-            </ul>
-            <p>Il mancato rispetto del GDPR può comportare <strong>sanzioni amministrative</strong> fino a 20 milioni di euro o fino al 4% del fatturato mondiale annuo.</p>
-        </div>
+
+        
     </main>
     <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <h4>Educazione Civica 2025</h4>
-        <p>Un progetto dell'Istituto di Istruzione Superiore Galileo Ferraris di Ragusa</p>
-      </div>
-
-      <div class="footer-links">
-        <h4>Collegamenti rapidi</h4>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="introduzione_ue.html">Unione Europea</a>
-          </li>
-          <li>
-            <a href="gdpr.html">GDPR</a>
-          </li>
-          <li>
-            <a href="matematica.html">Matematica</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <p>&copy; 2025 - Tutti i diritti riservati</p>
-      </div>
-    </div>
-  </footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h4>Educazione Civica 2025</h4>
+                <p>Un progetto dell'Istituto di Istruzione Superiore Galileo Ferraris di Ragusa</p>
+            </div>
+            <div class="footer-links">
+                <h4>Collegamenti rapidi</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="introduzione_ue.html">Unione Europea</a></li>
+                    <li><a href="gdpr.html">GDPR</a></li>
+                    <li><a href="matematica.html">Matematica</a></li>
+                    <li><a href="normative.html">Normative ISO</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
