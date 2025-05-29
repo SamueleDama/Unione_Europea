@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +13,18 @@
         .opinion-container {
             background: #fff;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             padding: 25px;
             margin-bottom: 30px;
             position: relative;
             transition: all 0.3s;
         }
-        
+
         .opinion-container:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
-        
+
         .opinion-container::before {
             content: '';
             position: absolute;
@@ -33,7 +34,7 @@
             height: 5px;
             background: linear-gradient(90deg, #2600ff, #09c0ee);
         }
-        
+
         .opinion-author {
             font-weight: bold;
             color: #2600ff;
@@ -43,28 +44,28 @@
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .opinion-date {
             font-size: 0.8em;
             color: #666;
         }
-        
+
         .opinion-text {
             line-height: 1.8;
             margin-bottom: 15px;
         }
-        
+
         .opinion-text p {
             margin-bottom: 15px;
         }
-        
+
         .opinion-form {
             background: #f0f4f8;
             border-radius: 15px;
             padding: 25px;
             margin-top: 40px;
         }
-        
+
         .opinion-form h3 {
             color: #2600ff;
             margin-top: 0;
@@ -72,17 +73,17 @@
             border-bottom: 2px solid #ddd;
             padding-bottom: 10px;
         }
-        
+
         .form-group {
             margin-bottom: 20px;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
         }
-        
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -92,12 +93,12 @@
             font-family: inherit;
             font-size: 1em;
         }
-        
+
         .form-group textarea {
             min-height: 150px;
             resize: vertical;
         }
-        
+
         .submit-btn {
             background: linear-gradient(45deg, #2600ff, #09c0ee);
             color: #fff;
@@ -108,36 +109,36 @@
             cursor: pointer;
             transition: all 0.3s;
         }
-        
+
         .submit-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(9, 192, 238, 0.4);
         }
-        
+
         .normative-info {
             margin-bottom: 30px;
         }
-        
+
         .normative-info h3 {
             color: #2600ff;
             margin-bottom: 15px;
         }
-        
+
         .normative-types {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
         }
-        
+
         .normative-type {
             flex: 1;
             min-width: 250px;
             background: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .normative-type h4 {
             color: #2600ff;
             margin-top: 0;
@@ -147,6 +148,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -154,30 +156,87 @@
             <h1>Opinioni sulle Normative ISO</h1>
         </div>
         <nav>
-           <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="introduzione_ue.html">U.E.</a></li>
-        <li><a href="gdpr.html">GDPR</a></li>
-        <li><a href="matematica.html">Matematica</a></li>
-        <li><a href="opinioni_normative.html"  class="active">Opinioni normative ISO</a></li>
-        <li><a href="index.html#about">Chi siamo</a></li>
-      </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduzione_ue.html">U.E.</a></li>
+                <li><a href="gdpr.html">GDPR</a></li>
+                <li><a href="matematica.html">Matematica</a></li>
+                <li><a href="opinioni_normative.html" class="active">Opinioni normative ISO</a></li>
+                <li><a href="index.html#about">Chi siamo</a></li>
+            </ul>
         </nav>
     </header>
 
     <main class="content">
         <div class="card" style="grid-column: 1 / -1;">
             <h3>Le Normative ISO in ambito aziendale</h3>
-            <p>In questa sezione raccogliamo le opinioni degli studenti sulle principali normative ISO che influenzano le aziende moderne, con particolare attenzione alla famiglia ISO 14000 (gestione ambientale) e alla ISO 45001:2018 (salute e sicurezza sul lavoro).</p>
-            <p>Queste normative, pur non essendo sempre obbligatorie, rappresentano importanti strumenti per guidare le imprese verso una gestione più sostenibile, sicura e responsabile. Le opinioni qui raccolte riflettono il pensiero critico degli studenti su questi temi fondamentali per l'educazione civica e la cittadinanza attiva.</p>
+            <p>In questa sezione raccogliamo le opinioni degli studenti sulle principali normative ISO che influenzano
+                le aziende moderne, con particolare attenzione alla famiglia ISO 14000 (gestione ambientale) e alla ISO
+                45001:2018 (salute e sicurezza sul lavoro).</p>
+            <p>Queste normative, pur non essendo sempre obbligatorie, rappresentano importanti strumenti per guidare le
+                imprese verso una gestione più sostenibile, sicura e responsabile. Le opinioni qui raccolte riflettono
+                il pensiero critico degli studenti su questi temi fondamentali per l'educazione civica e la cittadinanza
+                attiva.</p>
+        </div>
+
+        <div class="card">
+            <h3>l'importanza di un Sistema di Gestione della Qualità</h3>
+            <p>
+                Il Sistema di gestione della qualità (SGQ) è fondamentale per aumentre la competitività aziendale. Esso
+                consente di comprendere le esigenze dei clienti, valutarne la soddisfazione e pianificare miglioramenti
+                continui. Per questo, le aziende devono adottare e mantenere aggiornato un SGQ, tenendo conto delle
+                esigenze di tutte le arti interessate.
+            </p>
+            <p>
+                Questo approccio di basa su due concetti chiave: il PDCA e il Risk Based Thinking
+            </p>
+        </div>
+        <div class="card">
+            <h3>Ciclo PDCA</h3>
+            <p>
+                Il ciclo PDCA (Plan-Do-Check-Act) è un metodo iterativo per il miglioramento dei processi. Si tratta di
+                un ciclo continuo di:
+            <ul>
+                <li><strong>Pianificare (Plan):</strong> stabilire gli obiettivi e i processi necessari.</li>
+                <li><strong>Fare (Do):</strong> implementare i processi.</li>
+                <li><strong>Verificare (Check): </strong>monitorare e misurare i processi e i risultati rispetto agli
+                    obiettivi.</li>
+                <li><strong>Agire (Act):</strong> intraprendere azioni per migliorare continuamente le prestazioni.</li>
+            </ul>
+            </p>
+        </div>
+        <div class="card">
+            <h3>Risk Based Thinking</h3>
+            <p>
+                Il Sistema di Gestione della Qualità comprende anche l'utilizzo di un pensiero basato sul rischio,
+                chiamato Risk based Thinking, il quale rappresenta una tecnica attraverso cui l'azienda deve
+                identificare e valutare i possibili rischi (e le opportunità) legati ai suoi processi, per anticipare i
+                problemi e agire di conseguenza.
+            </p>
         </div>
 
         <div class="normative-info" style="grid-column: 1 / -1;">
             <h3>Le normative in breve</h3>
             <div class="normative-types">
                 <div class="normative-type">
+                    <h4>famiglia ISO 9000</h4>
+                    <p>La famiglia di norme ISO 9000 si concentra nel fornire alle aziende gli strumenti per il
+                        mantenimeto di una qualità adeguata della propria performance nel proprio settore. In
+                        particolare si notano:</p>
+                    <ul>
+                        <li><strong>ISO 9000:</strong> che descrive il bocabolario ed i principi della gestione della
+                            qualità</li>
+                        <li><strong>ISO 9001:</strong> definisce i reqisiti del Sistema di gestione della qualità (SGQ)
+                            per qualsiasi organizzazione</li>
+                        <li><strong>ISO 9004:</strong> non è una norma ma definisce le linee guida per mantenere alta la
+                            competitività di un azienda</li>
+                    </ul>
+                </div>
+                <div class="normative-type">
                     <h4>ISO 14000</h4>
-                    <p>La famiglia di norme ISO 14000 fornisce strumenti pratici per le aziende che vogliono gestire le proprie responsabilità ambientali. Si concentra sulla gestione ambientale e include standard per:</p>
+                    <p>La famiglia di norme ISO 14000 fornisce strumenti pratici per le aziende che vogliono gestire le
+                        proprie responsabilità ambientali. Si concentra sulla gestione ambientale e include standard
+                        per:</p>
                     <ul>
                         <li>Sistemi di gestione ambientale</li>
                         <li>Audit ambientali</li>
@@ -188,7 +247,8 @@
                 </div>
                 <div class="normative-type">
                     <h4>ISO 45001:2018</h4>
-                    <p>La norma ISO 45001:2018 specifica i requisiti per un sistema di gestione della salute e sicurezza sul lavoro (SSL) e fornisce indicazioni per il suo utilizzo. Aiuta le organizzazioni a:</p>
+                    <p>La norma ISO 45001:2018 specifica i requisiti per un sistema di gestione della salute e sicurezza
+                        sul lavoro (SSL) e fornisce indicazioni per il suo utilizzo. Aiuta le organizzazioni a:</p>
                     <ul>
                         <li>Ridurre infortuni e malattie sul lavoro</li>
                         <li>Eliminare o minimizzare i rischi per la SSL</li>
@@ -198,26 +258,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="opinion-container" style="grid-column: 1 / -1;">
-            <div class="opinion-author">
-                <span>Opinione di uno studente</span>
-                <span class="opinion-date">17 maggio 2025</span>
-            </div>
-            <div class="opinion-text">
-                <p>In merito agli aspetti contemplati all'interno delle norme della famiglia ISO 14000, nello specifico, riguardanti il sistema di gestione ambientale che deve essere adottato dalle imprese presenti in tutto il mondo, ritengo che esso costituisca un importantissimo passo in avanti effettuato nell'ambito della tutela dell'ambiente a noi circostante. Mi permetto di affermare ciò, in quanto la tendenza comune (soprattutto da parte delle maggiori istituzioni) è quella di attribuire ai consumatori finali dei prodotti realizzati dalle singole imprese tutte le responsabilità derivanti dal crescente fenomeno dell'inquinamento ambientale tanto ricorrente al nostro tempo.</p>
-                
-                <p>In realtà, secondo il mio modesto parere, ritengo che l'attribuzione totale della responsabilità verso questo problema vada parzialmente migrata verso le imprese, proprio perché queste ultime non si attengono quanto dovrebbero al rispetto del nostro ambiente durante tutta la loro fase di produzione: nello specifico, tra i problemi ricorrenti, ritroviamo una scarsa attenzione nei materiali che vengono utilizzati e nello smaltimento di quelli che avanzano dalla produzione, una mancata formazione delle figure che vanno ad operare all'interno di tutto l'ambito produttivo, e soprattutto, spostando l'attenzione sulla responsabilità del nostro Stato, ritengo che non sia stata così evidente una qualche forma di aiuto dal punto di vista economico verso coloro i quali adottavano una notevole meticolosità nel rispettare l'ambiente durante il processo produttivo.</p>
-                
-                <p>In definitiva, da quello che si evince dal mio discorso, quindi, l'invito risiede nel fatto che, proprio perché queste norme (attualmente) non sono obbligatoriamente da rispettare, si faccia il possibile in termini di appoggi economici e di campagne volte all'incentivare al rispetto di questa sezione normativa, al fine di poter trasformare il rispetto di queste norme da un dovere formale ad un obbligo etico.</p>
-                
-                <p>Da questo ragionamento, mi collego anche al discorso riguardante le norma ISO 45001:2018, introdotta al fine di garantire il raggiungimento degli obiettivi di salute e di sicurezza sul lavoro minimizzando al contempo i costi. Anche in riferimento a questo ambito, mi sento in dovere di affermare che effettivamente l'introduzione di questa sezione normativa costituisca un passo altrettanto significativo per l'ambito lavorativo, se non fosse che, anche in questo caso, il rispetto di tale sezione normativa sia dipendente dalla volontà del datore di lavoro (entro i dovuti limiti). Anche per questo ambito, quindi, ancora una volta l'invito è quello di, soprattutto da parte delle più importanti istituzioni del settore, fornire i dovuti incentivi in termini economici al fine di poter garantire ad un'impresa di qualsiasi entità di poter adottare gli accorgimenti e precauzioni proposte.</p>
-            </div>
-        </div>
         <div class="card" style="grid-column: 1 / -1;">
             <h3>Le normative SA 8000:2014</h3>
             <p>Le normative SA 8000:2014 sono incentrate su tematiche di rispetto e responabilità sociale
-                possiamo citarne alcune come: 
+                possiamo citarne alcune come:
             </p>
 
             <ul>
@@ -230,19 +274,142 @@
 
         <div class="card" style="grid-column: 1 / -1;">
             <h3>Come si deve comportare un azienda</h3>
-            <p>La norma SA 8000specifica quali sono gli <strong>ambiti che l'azienda deve tenere sotto controllo.</strong>
-            Se un'azienda vuole ottenere e mantenere una certificazione deve sottoporsi
-        a una verifica semestrale di un ente esternoc che valuta ogni punto sopraindicato</p>
+            <p>La norma SA 8000specifica quali sono gli <strong>ambiti che l'azienda deve tenere sotto
+                    controllo.</strong>
+                Se un'azienda vuole ottenere e mantenere una certificazione deve sottoporsi
+                a una verifica semestrale di un ente esternoc che valuta ogni punto sopraindicato</p>
         </div>
+        <div class="opinion-container" style="grid-column: 1 / -1;">
 
+            <div class="opinion-text">
+                <p>In merito agli aspetti contemplati all'interno delle norme della famiglia ISO 14000, nello specifico,
+                    riguardanti il sistema di gestione ambientale che deve essere adottato dalle imprese presenti in
+                    tutto il mondo, ritengo che esso costituisca un importantissimo passo in avanti effettuato
+                    nell'ambito della tutela dell'ambiente a noi circostante. Mi permetto di affermare ciò, in quanto la
+                    tendenza comune (soprattutto da parte delle maggiori istituzioni) è quella di attribuire ai
+                    consumatori finali dei prodotti realizzati dalle singole imprese tutte le responsabilità derivanti
+                    dal crescente fenomeno dell'inquinamento ambientale tanto ricorrente al nostro tempo.</p>
+
+                <p>In realtà, secondo il mio modesto parere, ritengo che l'attribuzione totale della responsabilità
+                    verso questo problema vada parzialmente migrata verso le imprese, proprio perché queste ultime non
+                    si attengono quanto dovrebbero al rispetto del nostro ambiente durante tutta la loro fase di
+                    produzione: nello specifico, tra i problemi ricorrenti, ritroviamo una scarsa attenzione nei
+                    materiali che vengono utilizzati e nello smaltimento di quelli che avanzano dalla produzione, una
+                    mancata formazione delle figure che vanno ad operare all'interno di tutto l'ambito produttivo, e
+                    soprattutto, spostando l'attenzione sulla responsabilità del nostro Stato, ritengo che non sia stata
+                    così evidente una qualche forma di aiuto dal punto di vista economico verso coloro i quali
+                    adottavano una notevole meticolosità nel rispettare l'ambiente durante il processo produttivo.</p>
+
+                <p>In definitiva, da quello che si evince dal mio discorso, quindi, l'invito risiede nel fatto che,
+                    proprio perché queste norme (attualmente) non sono obbligatoriamente da rispettare, si faccia il
+                    possibile in termini di appoggi economici e di campagne volte all'incentivare al rispetto di questa
+                    sezione normativa, al fine di poter trasformare il rispetto di queste norme da un dovere formale ad
+                    un obbligo etico.</p>
+
+                <p>Da questo ragionamento, mi collego anche al discorso riguardante le norma ISO 45001:2018, introdotta
+                    al fine di garantire il raggiungimento degli obiettivi di salute e di sicurezza sul lavoro
+                    minimizzando al contempo i costi. Anche in riferimento a questo ambito, mi sento in dovere di
+                    affermare che effettivamente l'introduzione di questa sezione normativa costituisca un passo
+                    altrettanto significativo per l'ambito lavorativo, se non fosse che, anche in questo caso, il
+                    rispetto di tale sezione normativa sia dipendente dalla volontà del datore di lavoro (entro i dovuti
+                    limiti). Anche per questo ambito, quindi, ancora una volta l'invito è quello di, soprattutto da
+                    parte delle più importanti istituzioni del settore, fornire i dovuti incentivi in termini economici
+                    al fine di poter garantire ad un'impresa di qualsiasi entità di poter adottare gli accorgimenti e
+                    precauzioni proposte.</p>
+                <p>
+                    A.A.M.D.P.
+                </p>
+            </div>
+        </div>
+        <div class="card" style="grid-column: 1 / -1;">
+            <div class="opinion-author">
+                <h3>Opinione di uno studente</h3>
+                <span class="opinion-date">17 maggio 2025</span>
+            </div>
+            <p>In merito agli aspetti contemplati all'interno delle norme della famiglia ISO 14000, nello specifico,
+                riguardanti il sistema di gestione ambientale che deve essere adottato dalle imprese presenti in tutto
+                il mondo, ritengo che esso costituisca un importantissimo passo in avanti effettuato nell'ambito della
+                tutela dell'ambiente a noi circostante. Mi permetto di affermare ciò, in quanto la tendenza comune
+                (soprattutto da parte delle maggiori istituzioni) è quella di attribuire ai consumatori finali dei
+                prodotti realizzati dalle singole imprese tutte le responsabilità derivanti dal crescente fenomeno
+                dell'inquinamento ambientale tanto ricorrente al nostro tempo.</p>
+
+            <p>In realtà, secondo il mio modesto parere, ritengo che l'attribuzione totale della responsabilità verso
+                questo problema vada parzialmente migrata verso le imprese, proprio perché queste ultime non si
+                attengono quanto dovrebbero al rispetto del nostro ambiente durante tutta la loro fase di produzione:
+                nello specifico, tra i problemi ricorrenti, ritroviamo una scarsa attenzione nei materiali che vengono
+                utilizzati e nello smaltimento di quelli che avanzano dalla produzione, una mancata formazione delle
+                figure che vanno ad operare all'interno di tutto l'ambito produttivo, e soprattutto, spostando
+                l'attenzione sulla responsabilità del nostro Stato, ritengo che non sia stata così evidente una qualche
+                forma di aiuto dal punto di vista economico verso coloro i quali adottavano una notevole meticolosità
+                nel rispettare l'ambiente durante il processo produttivo.</p>
+
+            <p>In definitiva, da quello che si evince dal mio discorso, quindi, l'invito risiede nel fatto che, proprio
+                perché queste norme (attualmente) non sono obbligatoriamente da rispettare, si faccia il possibile in
+                termini di appoggi economici e di campagne volte all'incentivare al rispetto di questa sezione
+                normativa, al fine di poter trasformare il rispetto di queste norme da un dovere formale ad un obbligo
+                etico.</p>
+
+            <p>Da questo ragionamento, mi collego anche al discorso riguardante le norma ISO 45001:2018, introdotta al
+                fine di garantire il raggiungimento degli obiettivi di salute e di sicurezza sul lavoro minimizzando al
+                contempo i costi. Anche in riferimento a questo ambito, mi sento in dovere di affermare che
+                effettivamente l'introduzione di questa sezione normativa costituisca un passo altrettanto significativo
+                per l'ambito lavorativo, se non fosse che, anche in questo caso, il rispetto di tale sezione normativa
+                sia dipendente dalla volontà del datore di lavoro (entro i dovuti limiti). Anche per questo ambito,
+                quindi, ancora una volta l'invito è quello di, soprattutto da parte delle più importanti istituzioni del
+                settore, fornire i dovuti incentivi in termini economici al fine di poter garantire ad un'impresa di
+                qualsiasi entità di poter adottare gli accorgimenti e precauzioni proposte.</p>
+            <p>
+                A.A.M.D.P.
+            </p>
+        </div>
         <div class="card" style="grid-column: 1 / -1;">
             <h3>Opinioni dell'alunno</h3>
-            <p>Secondo la mia opinione, la norma SA 8000:2014 rappresenta un modello virtuoso per 
-                promuovere il rispetto dei diritti umani nel mondo del lavoro. 
-                Essa impone criteri chiari e rigorosi contro lo sfruttamento, incentivando pratiche aziendali etiche e trasparenti.
-                 Questo approccio non solo tutela i lavoratori, ma migliora anche l’immagine e la credibilità delle imprese. 
-                 Inoltre, favorisce un ambiente di lavoro più sicuro e inclusivo, con effetti positivi sulla produttività e sulla coesione 
-                 interna. La sua adozione è un segnale concreto di impegno verso la sostenibilità sociale e il progresso civile.</p>
+            <p>Secondo la mia opinione, la norma SA 8000:2014 rappresenta un modello virtuoso per
+                promuovere il rispetto dei diritti umani nel mondo del lavoro.
+                Essa impone criteri chiari e rigorosi contro lo sfruttamento, incentivando pratiche aziendali etiche e
+                trasparenti.
+                Questo approccio non solo tutela i lavoratori, ma migliora anche l’immagine e la credibilità delle
+                imprese.
+                Inoltre, favorisce un ambiente di lavoro più sicuro e inclusivo, con effetti positivi sulla produttività
+                e sulla coesione
+                interna. La sua adozione è un segnale concreto di impegno verso la sostenibilità sociale e il progresso
+                civile.</p>
+            <p>
+                A.M.
+            </p>
+        </div>
+        <div class="card" style="grid-column: 1 / -1;">
+            <h3>Riflessione critica riguardo le normative ISO</h3>
+            <p> Dopo aver letto in modo approfondito il tema delle normative ISO, e quindi i relativi requisiti, le
+                regole e le linee guida per le aziende mi è possibile esprimere diverse osservazioni in materia. </p>
+            <p>L’obiettivo delle normative risulta chiaro nel loro scopo e nobile nei loro intenti (sia in materia
+                ambientale che di sicurezza così come di competitività sul mercato), ciononostante è possibile esprimere
+                un'opinione critica dell'esistenza stessa delle norme. Essendo questa una riflessione di carattere
+                personale non può che essere espressa facendo uso delle osservazioni e dell’esperienza personale
+                acquisita negli anni. </p>
+            <p>Personalmente, l’esistenza stessa di queste normative mi lascia in parte perplesso. Leggendo, osservando
+                e confrontando il sistema di governance europea riguardo le imprese, queste normative, dal mio punto di
+                vista, ricadono in quel trend (tradizionalmente europeo) di alto interventismo statale sul mercato. In
+                particolare, si vuole confrontare la prima economia mondiale (ovvero l’economia Americana) con il
+                mercato Europeo:
+                se da un lato abbiamo una totale libertà delle aziende che hanno carta bianca riguardo quasi tutto
+                quello che riguarda la gestione del proprio processo produttivo, dall’altro abbiamo un gruppo di governi
+                che impone limitazioni quasi soffocanti alle aziende di diversi settori, costringendole a destinare
+                risorse e materiale umano dove deciso dal governo scoraggiando l’iniziativa aziendale.</p>
+            <p>In particolare si vuole menzionare il sistema di Gestione della qualità, il quale vuole nobilmente creare
+                un mercato competitivo e valido internazionalmente. Esso però potrebbe risultare rigido per le aziende e
+                limita la sperimentazione di settore. Il mercato ha bisogno di sperimentazione ed innovazione e,
+                dal mio punto di vista, la “guida” offerta dal governo sul come essere competitivi e mantenere alta la
+                qualità è un sistema troppo rigido per poter essere cambiato efficacemente in base al settore, al tipo
+                di prodotto, ai movimenti del mercato (che è estremamente dinamico), risultando nella creazione di
+                aziende con processi produttivi lenti e restii al cambiamento.</p>
+            <p>Riguardo l’ambiente e la sicurezza, invece, il governo fa più che bene ad intervenire in quanto materia
+                di altissima priorità.</p>
+
+            <p>
+                S.D.
+            </p>
         </div>
     </main>
     <footer>
@@ -253,14 +420,14 @@
             </div>
             <div class="footer-links">
                 <h4>Collegamenti rapidi</h4>
-               <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="introduzione_ue.html">U.E.</a></li>
-        <li><a href="gdpr.html">GDPR</a></li>
-        <li><a href="matematica.html">Matematica</a></li>
-        <li><a href="opinioni_normative.html">Opinioni normative ISO</a></li>
-        <li><a href="#about">Chi siamo</a></li>
-      </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="introduzione_ue.html">U.E.</a></li>
+                    <li><a href="gdpr.html">GDPR</a></li>
+                    <li><a href="matematica.html">Matematica</a></li>
+                    <li><a href="opinioni_normative.html">Opinioni normative ISO</a></li>
+                    <li><a href="#about">Chi siamo</a></li>
+                </ul>
             </div>
             <div class="footer-copyright">
                 <p>&copy; 2025 - Tutti i diritti riservati</p>
@@ -268,4 +435,5 @@
         </div>
     </footer>
 </body>
+
 </html>
